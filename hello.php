@@ -8,4 +8,10 @@
   //1. local scope
   //2. global scope
   //3. super global scope
+
+  function myFun1(){
+    global $a;
+    echo $a;
+  }
+  myFun1();
 ?>
