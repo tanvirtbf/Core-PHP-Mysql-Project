@@ -24,10 +24,10 @@
   // echo BATCH;
   // echo SITE_NAME;
 
-  //printf
-  $name = "Tanvir Ahmed";
-  $age = 25;
-  printf("Name : %s, Age : %d", $name,$age);
+  //printf() = formatting + output print
+  // $name = "Tanvir Ahmed";
+  // $age = 25;
+  // printf("Name : %s, Age : %d", $name,$age);
 
   //placeholder(php) or format spacifier(C)
   // %s = string
@@ -35,5 +35,11 @@
   // %f = floating
   // %x = lowercase hexadecimal
   // %X = uppercase hexadecimal
+
+  //sprintf() = only formatting, not for output
+  $name = "Tanvir";
+  $age = 25;
+  $result = sprintf("My name is : %s and My age is : %d ",$name,$age);
+  echo $result;
   
   ?>
