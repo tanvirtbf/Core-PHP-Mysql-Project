@@ -77,10 +77,36 @@
   // sum(1,2,3,4,5,6);
 
   // Anonymous Function -> || IIF(in js)
-  (function(){
-    echo "I am not a function name";
-  })();
+  // (function(){
+  //   echo "I am not a function name";
+  // })();
 
+  //Anonymous function assign to variable
+  // $hitrun=function($name){
+  //   echo $name;
+  // };
+  // $hitrun("Hello!!");
 
+  // Basic Return Type 
+  // ekta function ja return kore seta tar soman hoye jay;
+  // $addTwo=function(){
+  //   return 10;
+  // };
+  // $sum=$addTwo()+10;
+  // echo $sum;
+
+  //Function Return Type
+  // function addTwo():int{
+  //   return 10;
+  // };
+  // $add=addTwo();
+  // echo $add;
+
+  // Union Return Type (Multiple Return Type)
+  function addTwo():int|float|string|bool{
+    return 10;
+  };
+  $add=addTwo();
+  echo $add;
   
 ?>
