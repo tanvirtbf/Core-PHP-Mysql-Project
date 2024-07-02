@@ -37,9 +37,16 @@
   // %X = uppercase hexadecimal
 
   //sprintf() = only formatting, not for output
-  $name = "Tanvir";
-  $age = 25;
-  $result = sprintf("My name is : %s and My age is : %d ",$name,$age);
-  echo $result;
+  // $name = "Tanvir";
+  // $age = 25;
+  // $result = sprintf("My name is : %s and My age is : %d ",$name,$age);
+  // echo $result;
+
+  // Ternary Operators
+  // almost same concept with Javascript 
+
+  // Function argument, parameter with Type Hinting
+
+
   
-  ?>
+?>
