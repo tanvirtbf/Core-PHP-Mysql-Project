@@ -15,4 +15,11 @@
   // myFun1();
 
   //constant variable
+
+  //define const
+  define('BATCH','3');
+  define('SITE_NAME', 'http://tanvir.app');
+  
+  //Access const
+
 ?>
