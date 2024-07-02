@@ -21,5 +21,6 @@
   define('SITE_NAME', 'http://tanvir.app');
   
   //Access const
-
+  echo BATCH;
+  echo SITE_NAME;
 ?>
