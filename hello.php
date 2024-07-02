@@ -61,12 +61,20 @@
 
   // Nullable Type Hinting
   //strict mode on
-  declare(strict_types=1);
-  function hello(?string $name){
-    echo $name;
+  // declare(strict_types=1);
+  // function hello(?string $name){
+  //   echo $name;
+  // }
+  // hello(null);
+  // hello(123);
+
+  //Variadic Functions
+  function sum(...$name){
+    for($i = 0; $i<=5; $i++){
+      echo $name[$i];
+    };
   }
-  hello(null);
-  hello(123);
+  sum(1,2,3,4,5,6);
 
 
   
