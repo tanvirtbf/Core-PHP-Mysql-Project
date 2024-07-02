@@ -28,4 +28,12 @@
   $name = "Tanvir Ahmed";
   $age = 25;
   printf("Name : %s, Age : %d", $name,$age);
-?>
+
+  //placeholder(php) or format spacifier(C)
+  // %s = string
+  // %d = decimal / int
+  // %f = floating
+  // %x = lowercase hexadecimal
+  // %X = uppercase hexadecimal
+  
+  ?>
