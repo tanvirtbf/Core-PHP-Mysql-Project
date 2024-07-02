@@ -69,12 +69,17 @@
   // hello(123);
 
   //Variadic Functions
-  function sum(...$name){
-    for($i = 0; $i<=5; $i++){
-      echo $name[$i];
-    };
-  }
-  sum(1,2,3,4,5,6);
+  // function sum(...$name){
+  //   for($i = 0; $i<=5; $i++){
+  //     echo $name[$i];
+  //   };
+  // }
+  // sum(1,2,3,4,5,6);
+
+  // Anonymous Function -> || IIF(in js)
+  (function(){
+    echo "I am not a function name";
+  })();
 
 
   
