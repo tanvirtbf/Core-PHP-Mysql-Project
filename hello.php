@@ -54,11 +54,19 @@
   // sum(2,3.0,4);
 
   //Multiple Type Hinting..
-  function mySelf(string $name, int|string $age, string $des = "Complete"){
-    printf("My Name is %s. My age is %d and %s",$name,$age,$des);
-  }
-  mySelf("Tanvir Ahmed",23,"It's Complete");
+  // function mySelf(string $name, int|string $age, string $des = "Complete"){
+  //   printf("My Name is %s. My age is %d and %s",$name,$age,$des);
+  // }
+  // mySelf("Tanvir Ahmed",23,"It's Complete");
 
+  // Nullable Type Hinting
+  //strict mode on
+  declare(strict_types=1);
+  function hello(?string $name){
+    echo $name;
+  }
+  hello(null);
+  hello(123);
 
 
   
