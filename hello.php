@@ -1,17 +1,18 @@
 <?php 
-  $a=10;
-  $b=20;
-  $c = $a + $b;
-  echo $c;
+  // $a=10;
+  // $b=20;
+  // $c = $a + $b;
+  // echo $c;
 
   //scope
   //1. local scope
   //2. global scope
   //3. super global scope
+  // function myFun1(){
+  //   global $a;
+  //   echo $a;
+  // }
+  // myFun1();
 
-  function myFun1(){
-    global $a;
-    echo $a;
-  }
-  myFun1();
+  //constant variable
 ?>
