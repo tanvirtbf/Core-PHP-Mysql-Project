@@ -46,6 +46,13 @@
   // almost same concept with Javascript 
 
   // Function argument, parameter with Type Hinting
+  function sum(int $a,float $b, int $c){
+    $nam1 = $a+$c;
+    $nam2 = $b + $nam1;
+    echo $nam2;
+  }
+  sum(2,3.0,4);
+
 
 
   
