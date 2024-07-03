@@ -155,11 +155,14 @@
   }
   $h1=new Human();
   $d1=new Dog();
+  $h2=new Human();
 
   $h1->name="Tanvir\n";
   $h1->sayName();
   $d1->name2 = "Tiger\n";
   $d1->sayName();
+  $h2->name="Sadia";
+  $h2->sayName();
   
 
 
