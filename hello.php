@@ -164,28 +164,29 @@
   // $sadia->sayName();
 
   //Funding mini project
-  class Fund{
-    public $fund;
-    public function __construct($initialFund=0){
-      $this->fund = $initialFund;
-    }
-    public function addFund($money){
-      $this->fund += $money;
-    }
-    public function deductFund($money){
-      $this->fund -= $money;
-    }
-    public function getTotalFund(){
-      echo "Total Fund is {$this->fund}\n";
-    }
-  }
+  // class Fund{
+  //   private $fund;
+  //   public function __construct($initialFund=0){
+  //     $this->fund = $initialFund;
+  //   }
+  //   public function addFund($money){
+  //     $this->fund += $money;
+  //   }
+  //   public function deductFund($money){
+  //     $this->fund -= $money;
+  //   }
+  //   public function getTotalFund(){
+  //     echo "Total Fund is {$this->fund}\n";
+  //   }
+  // }
 
-  $ourFund = new Fund(100);
-  $ourFund->addFund(12);
-  $ourFund->deductFund(5);
-  $ourFund->getTotalFund();
+  // $ourFund = new Fund(100);
+  // $ourFund->addFund(12);
+  // $ourFund->deductFund(5);
+  // $ourFund->getTotalFund();
 
-  
+  // Project : Hexadecimal to decimal(RGB) 
+
 
 
 
