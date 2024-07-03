@@ -111,33 +111,83 @@
 
   // Object Oriented Programming
   
-  Class Human{
-    public $name;
-    function sayHi(){
-      echo "Salam\n";
-    }
-    function getName(){
-      echo "My name is {$this->name}";
-    }
-  }
-  class Cat{
-    function sayHi(){
-      echo "Meow\n";
-    }
-  }
-  class Dog{
-    function sayHi(){
-      echo "Woof\n";
-    }
-  }
+  // Class Human{
+  //   public $name;
+  //   function sayHi(){
+  //     echo "Salam\n";
+  //   }
+  //   function getName(){
+  //     echo "My name is {$this->name}";
+  //   }
+  // }
+  // class Cat{
+  //   function sayHi(){
+  //     echo "Meow\n";
+  //   }
+  // }
+  // class Dog{
+  //   function sayHi(){
+  //     echo "Woof\n";
+  //   }
+  // }
 
-  $h1 = new Human();
-  $c1 = new Cat();
-  $d1 = new Dog();
-  $h1->name = "Tanvir";
+  // $h1 = new Human();
+  // $c1 = new Cat();
+  // $d1 = new Dog();
+  // $h1->name = "Tanvir";
 
   // $h1->sayHi();
   // $c1->sayHi();
-  $h1->getName();
+  // $h1->getName();
   // echo $h1->name;
+
+  class Human{
+    public $name;
+    function sayName(){
+      echo "My name is {$this->name}";
+    }
+  }
+  class Dog{
+    public $name2;
+    function sayName(){
+      echo "My name is {$this->name2}";
+    }
+  }
+  $h1=new Human();
+  $d1=new Dog();
+
+  $h1->name="Tanvir\n";
+  $h1->sayName();
+  $d1->name2 = "Tiger\n";
+  $d1->sayName();
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
