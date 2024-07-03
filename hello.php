@@ -194,6 +194,7 @@
 
     function __construct($colorCode=''){
       $this->color = ltrim($colorCode,"#");
+      $this->parseColor();
     }
     function getColor(){
       return $this->color;
@@ -211,9 +212,9 @@
     private function parseColor(){
       if($this->color){
         list($this->red,$this->green,$this->blue) = sscanf($this->color,'%02x%02x%02x');
-        echo $this->red;
-        echo $this->blue;
-        echo $this->green;
+        // echo $this->red;
+        // echo $this->blue;
+        // echo $this->green;
       }else{
         list($this->red,$this->green,$this->blue) = array(0,0,0);
       }
@@ -229,8 +230,7 @@
     }
   }
   $myColor = new RGB("#ffef27");
-  $myColor->setColor("#ffffff");
-
+  $myColor->readRGBColor();
 
 
 
