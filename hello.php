@@ -103,10 +103,12 @@
   // echo $add;
 
   // Union Return Type (Multiple Return Type)
-  function addTwo():int|float|string|bool{
-    return 10;
-  };
-  $add=addTwo();
-  echo $add;
+  // function addTwo():int|float|string|bool{
+  //   return 10;
+  // };
+  // $add=addTwo();
+  // echo $add;
+
+  // Object Oriented Programming
   
 ?>
