@@ -233,38 +233,31 @@
   // $myColor->setColor("#abbbcc");
   // $myColor->readRGBColor();
 
-
-
-
-
-
-
-
   // Alone this project
-  class RGB{
-    private $color;
-    private $red;
-    private $green;
-    private $blue;
-    public function __construct($colorCode=''){
-      $this->color = ltrim($colorCode,"#");
-      $this->colorPerse();
-    }
-    function getColorCode(){
-      echo "Red = {$this->red}\nGreen = {$this->green}\nBlue = {$this->blue}\n";
-    }
-    function colorPerse(){
-      if($this->color){
-        list($this->red,$this->green,$this->blue) = sscanf($this->color,'%02x%02x%02x');
-        $this->getColorCode();
-      }else{
-        list($this->red,$this->green,$this->blue) = array(0,0,0);
-      }
-    }
-  }
-  $genColor = new RGB("#ffaf0f");
+  // class RGB{
+  //   private $color;
+  //   private $red;
+  //   private $green;
+  //   private $blue;
+  //   public function __construct($colorCode=''){
+  //     $this->color = ltrim($colorCode,"#");
+  //     $this->colorPerse();
+  //   }
+  //   function getColorCode(){
+  //     echo "Red = {$this->red}\nGreen = {$this->green}\nBlue = {$this->blue}\n";
+  //   }
+  //   function colorPerse(){
+  //     if($this->color){
+  //       list($this->red,$this->green,$this->blue) = sscanf($this->color,'%02x%02x%02x');
+  //       $this->getColorCode();
+  //     }else{
+  //       list($this->red,$this->green,$this->blue) = array(0,0,0);
+  //     }
+  //   }
+  // }
+  // $genColor = new RGB("#ffaf0f");
 
-
+  // Array 
 
 
 
