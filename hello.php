@@ -198,6 +198,12 @@
     function getColor(){
       return $this->color;
     }
+    function getRGBColor(){
+      return array($this->red,$this->green,$this->blue);
+    }
+    function readRGBColor(){
+      echo "Red : {$this->red}\nGreen : {$this->green}\nBlue : {$this->blue}\n";
+    }
     function setColor($colorCode){
       $this->color = ltrim($colorCode,"#");
       $this->parseColor();
@@ -212,9 +218,18 @@
         list($this->red,$this->green,$this->blue) = array(0,0,0);
       }
     }
+    function getRed(){
+      return $this->red;
+    }
+    function getGreen(){
+      return $this->green;
+    }
+    function getBlue(){
+      return $this->blue;
+    }
   }
   $myColor = new RGB("#ffef27");
-  $myColor->setColor("ffffff");
+  $myColor->setColor("#ffffff");
 
 
 
