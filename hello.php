@@ -141,28 +141,50 @@
   // $h1->getName();
   // echo $h1->name;
 
-  class Human{
-    public $name;
-    function sayName(){
-      echo "My name is {$this->name}";
-    }
-  }
-  class Dog{
-    public $name2;
-    function sayName(){
-      echo "My name is {$this->name2}";
-    }
-  }
-  $h1=new Human();
-  $d1=new Dog();
-  $h2=new Human();
+  // class Human{
+  //   public $name;
+  //   public function __construct($name){
+  //     $this->name = $name;
+  //   }
+  //   function sayName(){
+  //     echo "My name is {$this->name}\n";
+  //   }
+  // }
+  // class Dog{
+  //   public $name2;
+  //   function sayName(){
+  //     echo "My name is {$this->name2}";
+  //   }
+  // }
+  // $tanvir=new Human("Tanvir",25);
+  // $d1=new Dog();
+  // $sadia=new Human("Sadia",15);
 
-  $h1->name="Tanvir\n";
-  $h1->sayName();
-  $d1->name2 = "Tiger\n";
-  $d1->sayName();
-  $h2->name="Sadia";
-  $h2->sayName();
+  // $tanvir->sayName();
+  // $sadia->sayName();
+
+  //Funding mini project
+  class Fund{
+    public $fund;
+    public function __construct($initialFund=0){
+      $this->fund = $initialFund;
+    }
+    public function addFund($money){
+      $this->fund += $money;
+    }
+    public function deductFund($money){
+      $this->fund -= $money;
+    }
+    public function getTotalFund(){
+      echo "Total Fund is {$this->fund}\n";
+    }
+  }
+
+  $ourFund = new Fund(100);
+  $ourFund->addFund(12);
+  $ourFund->deductFund(5);
+  $ourFund->getTotalFund();
+
   
 
 
