@@ -186,51 +186,93 @@
   // $ourFund->getTotalFund();
 
   // Project : Hexadecimal to decimal(RGB) 
+  // class RGB{
+  //   private $color;
+  //   private $red;
+  //   private $green;
+  //   private $blue;
+
+  //   function __construct($colorCode=''){
+  //     $this->color = ltrim($colorCode,"#");
+  //     $this->parseColor();
+  //   }
+  //   function getColor(){
+  //     return $this->color;
+  //   }
+  //   function getRGBColor(){
+  //     return array($this->red,$this->green,$this->blue);
+  //   }
+  //   function readRGBColor(){
+  //     echo "Red : {$this->red}\nGreen : {$this->green}\nBlue : {$this->blue}\n";
+  //   }
+  //   function setColor($colorCode){
+  //     $this->color = ltrim($colorCode,"#");
+  //     $this->parseColor();
+  //   }
+  //   private function parseColor(){
+  //     if($this->color){
+  //       list($this->red,$this->green,$this->blue) = sscanf($this->color,'%02x%02x%02x');
+  //       // echo $this->red;
+  //       // echo $this->blue;
+  //       // echo $this->green;
+  //     }else{
+  //       list($this->red,$this->green,$this->blue) = array(0,0,0);
+  //     }
+  //   }
+  //   function getRed(){
+  //     return $this->red;
+  //   }
+  //   function getGreen(){
+  //     return $this->green;
+  //   }
+  //   function getBlue(){
+  //     return $this->blue;
+  //   }
+  // }
+  // $myColor = new RGB("#ffef27");
+  // $myColor->setColor("#abbbcc");
+  // $myColor->readRGBColor();
+
+
+
+
+
+
+
+
+  // Alone this project
   class RGB{
     private $color;
     private $red;
     private $green;
     private $blue;
-
-    function __construct($colorCode=''){
+    public function __construct($colorCode=''){
       $this->color = ltrim($colorCode,"#");
-      $this->parseColor();
+      $this->colorPerse();
     }
-    function getColor(){
-      return $this->color;
+    function getColorCode(){
+      echo "Red = {$this->red}\nGreen = {$this->green}\nBlue = {$this->blue}\n";
     }
-    function getRGBColor(){
-      return array($this->red,$this->green,$this->blue);
-    }
-    function readRGBColor(){
-      echo "Red : {$this->red}\nGreen : {$this->green}\nBlue : {$this->blue}\n";
-    }
-    function setColor($colorCode){
-      $this->color = ltrim($colorCode,"#");
-      $this->parseColor();
-    }
-    private function parseColor(){
+    function colorPerse(){
       if($this->color){
         list($this->red,$this->green,$this->blue) = sscanf($this->color,'%02x%02x%02x');
-        // echo $this->red;
-        // echo $this->blue;
-        // echo $this->green;
+        $this->getColorCode();
       }else{
         list($this->red,$this->green,$this->blue) = array(0,0,0);
       }
     }
-    function getRed(){
-      return $this->red;
-    }
-    function getGreen(){
-      return $this->green;
-    }
-    function getBlue(){
-      return $this->blue;
-    }
   }
-  $myColor = new RGB("#ffef27");
-  $myColor->readRGBColor();
+  $genColor = new RGB("#ffaf0f");
+
+
+
+
+
+
+
+
+
+
 
 
 
