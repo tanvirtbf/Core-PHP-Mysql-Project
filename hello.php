@@ -111,4 +111,24 @@
 
   // Object Oriented Programming
   
+  Class Human{
+    function sayHi(){
+      echo "Salam";
+    }
+  }
+  class Cat{
+    function sayHi(){
+      echo "Meow";
+    }
+  }
+  class Dog{
+    function sayHi(){
+      echo "Woof";
+    }
+  }
+
+  $h1 = new Human();
+  $c1 = new Cat();
+  $d1 = new Dog();
+  
 ?>
