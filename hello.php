@@ -296,8 +296,19 @@
 
   // Inheritance (parent to child to next child to next next child)
   
+  class Father{
+    public function print100(){
+      for($i=0; $i<=100;$i++){
+        echo "{$i}\n";
+      }
+    }
+  }
+  class Son extends Father{
 
+  }
 
+  $sonObj=new Son();
+  $sonObj->print100();
 
 
 
