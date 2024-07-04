@@ -274,27 +274,27 @@
 
   // OOP AGAIN
   // class
-  class car{
+  // class car{
+  //   public $color="Red\n";
+  //   // Constructor
+  //   // 1. He can take parameter
+  //   // 2. He exucate automatically
+  //   // 3. He can't return anything
 
-    // Constructor
-    // 1. He can take parameter
-    // 2. He exucate automatically
-    // 3. He can't return anything
+  //   // Properties value manupulation using constructor parameter
+  //   public function __construct($newColor="Blue"){
+  //     $this->color = $newColor;
+  //   }
+  //   function drive(){
+  //     echo "I am driving\n";
+  //   }
+  // } 
+  // //Object
+  // $carObj=new car("Green");
+  // echo $carObj->color;
+  // $carObj->drive();
 
-    // Properties value manupulation using constructor parameter
-    public function __construct($a,$b,$c){
-      echo $a+$b+$c . "\n";
-    }
-    public $color="Red\n";
-    function drive(){
-      echo "I am driving\n";
-    }
-  } 
-  //Object
-  $carObj=new car(1,2,3);
-  echo $carObj->color;
-  $carObj->drive();
-
+  // Inheritance (parent to child to next child to next next child)
   
 
 
