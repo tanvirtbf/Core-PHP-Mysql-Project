@@ -273,8 +273,19 @@
   // }
 
   // OOP AGAIN
+  // class
+  class car{
+    public $color="Red\n";
+    function drive(){
+      echo "I am driving\n";
+    }
+  } 
+  //Object
+  $carObj=new car();
+  echo $carObj->color;
+  $carObj->drive();
 
-
+  // Constructor
 
 
 
