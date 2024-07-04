@@ -280,8 +280,10 @@
     // 1. He can take parameter
     // 2. He exucate automatically
     // 3. He can't return anything
-    public function __construct(){
-      echo "Hello World";
+
+    // Properties value manupulation using constructor parameter
+    public function __construct($a,$b,$c){
+      echo $a+$b+$c . "\n";
     }
     public $color="Red\n";
     function drive(){
@@ -289,7 +291,7 @@
     }
   } 
   //Object
-  $carObj=new car();
+  $carObj=new car(1,2,3);
   echo $carObj->color;
   $carObj->drive();
 
