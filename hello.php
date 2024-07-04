@@ -295,27 +295,27 @@
   // $carObj->drive();
 
   // Inheritance (parent to child to next child to next next child)
+  // 1. extends
+  // 2. override
+  // 3. parent keyword
+  // 4. abstract
   
-  class Father{
-    public function print100(){
-      for($i=0; $i<=100;$i++){
+  abstract class Father{
+    public $name = "Tanvir Ahmed\n";
+    public function print100($count=10){
+      for($i=0;$i<=100;$i+=$count){
         echo "{$i}\n";
       }
     }
   }
-  class Son extends Father{
+  class Child extends Father{
+    public $name2 = "Sadia Ahmed\n";
     public function demo(){
       parent::print100();
     }
   }
-
-  $sonObj=new Son();
-  $sonObj->demo();
-
-
-
-
-
+  $child=new Child();
+  $child->print100(33.33);
 
 
 
