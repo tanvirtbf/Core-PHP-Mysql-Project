@@ -331,7 +331,7 @@
   // $child=new Child();
 
   // Final keyword for inheritance
-  final class Father{
+  class Father{
     public function __construct(){
       echo "This is Father Constructor\n";
     }
@@ -340,7 +340,7 @@
         echo "{$i}\n";
       }
     }
-    public function print200($count=20){
+    final public function print200($count=20){
       for($i=0; $i<=200;$i+=$count){
         echo "{$i}\n";
       }
@@ -352,15 +352,20 @@
     }
   }
   class Child extends Father{
-    public function demo($count){
-      parent::print100($count);
-      parent::print200($count);
-      parent::print300($count);
+    // public function demo($count){
+    //   parent::print100($count);
+    //   parent::print200($count);
+    //   parent::print300($count);
+    // }
+    final public function print200($count=20){
+      for($i=0; $i<=200;$i+=$count){
+        echo "{$i}\n";
+      }
     }
   }
   $child=new Child();
-  $child->demo(33);
-
+  // $child->demo(33);
+  $child->print200()
 
 
 
