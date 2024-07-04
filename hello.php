@@ -261,17 +261,18 @@
 
   // Array creation 
   // First Approach
-  $arr1 = ['tanvir','sadia','maymuna'];
-  // Second Approach
-  $arr2 = array('Tanvir','Sadia','Maymuna');
+  // $arr1 = ['tanvir','sadia','maymuna'];
+  // // Second Approach
+  // $arr2 = array('Tanvir','Sadia','Maymuna');
 
-  for($i = 0; $i<count($arr1); $i++){
-    echo $arr1[$i] . "\n";
-  }
+  // for($i = 0; $i<count($arr1); $i++){
+  //   echo $arr1[$i] . "\n";
+  // }
   // foreach($arr1 as $hello){
   //   echo "{$hello} \n";
   // }
 
+  // OOP AGAIN
 
 
 
