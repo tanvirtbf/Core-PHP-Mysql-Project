@@ -275,6 +275,14 @@
   // OOP AGAIN
   // class
   class car{
+
+    // Constructor
+    // 1. He can take parameter
+    // 2. He exucate automatically
+    // 3. He can't return anything
+    public function __construct(){
+      echo "Hello World";
+    }
     public $color="Red\n";
     function drive(){
       echo "I am driving\n";
@@ -285,7 +293,7 @@
   echo $carObj->color;
   $carObj->drive();
 
-  // Constructor
+  
 
 
 
