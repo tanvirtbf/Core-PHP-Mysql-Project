@@ -304,11 +304,17 @@
     }
   }
   class Son extends Father{
-
+    public function print100(){
+      for($i=0; $i<=100;$i+=10){
+        echo "{$i}\n";
+      }
+    }
   }
 
   $sonObj=new Son();
+  $parentObj=new Father();
   $sonObj->print100();
+  $parentObj->print100();
 
 
 
