@@ -390,31 +390,31 @@
   // $form->print1();
   
   // Access Static and Non-Static Properties inside the class self:: , $this->
-  class FormValidation{
-    public static $name = "Tanvir Ahmed";
-    public function print1(){
-      echo "\nFirst Print\n";
-      self::print2();
-      echo self::$name . "\n";
-    }
-    public static function print2(){
-      echo "\nSecond Print\n";
-      echo self::$name . "\n";
-    }
-    public function print3(){
-      echo "\nThird Print\n";
-      echo self::$name . "\n";
-    }
-    public static function print4(){
-      echo "\nFourth Print\n";
-      echo self::$name . "\n";
-    }
-  }
-  FormValidation::print2();
-  FormValidation::print4();
-  $form = new FormValidation();
-  $form->print2();
-  $form->print1();
+  // class FormValidation{
+  //   public static $name = "Tanvir Ahmed";
+  //   public function print1(){
+  //     echo "\nFirst Print\n";
+  //     self::print2();
+  //     echo self::$name . "\n";
+  //   }
+  //   public static function print2(){
+  //     echo "\nSecond Print\n";
+  //     echo self::$name . "\n";
+  //   }
+  //   public function print3(){
+  //     echo "\nThird Print\n";
+  //     echo self::$name . "\n";
+  //   }
+  //   public static function print4(){
+  //     echo "\nFourth Print\n";
+  //     echo self::$name . "\n";
+  //   }
+  // }
+  // FormValidation::print2();
+  // FormValidation::print4();
+  // $form = new FormValidation();
+  // $form->print2();
+  // $form->print1();
 
 
 
