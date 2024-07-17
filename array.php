@@ -118,15 +118,23 @@
 // echo sizeof($sizeofArr);
 
 //15. array_sum()
-$sumArr = [1,2,3,4,5];
-$newArr = array_sum($sumArr);
-echo $newArr;
+// $sumArr = [1,2,3,4,5];
+// $newArr = array_sum($sumArr);
+// echo $newArr;
 
 //16. array_product()
-$productArr = [1,2,3,4,5];
-$newArr = array_product($productArr);
-echo $newArr;
+// $productArr = [1,2,3,4,5];
+// $newArr = array_product($productArr);
+// echo $newArr;
 
+//17. in_array()
+$inArr = ['tanvir','sadia','maymuna','humaira'];
+$check = in_array('sadia',$inArr);
+echo $check;
 
+//18. is_array()
+$isArr = 'hello world';
+$check = is_array($isArr);
+echo $check; // Ans : false
 
 ?>
