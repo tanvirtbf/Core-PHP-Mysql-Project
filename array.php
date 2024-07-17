@@ -138,12 +138,21 @@
 // echo $check; // Ans : false
 
 //19. array_key_exists()
-$arrayKeyExistArr = [
+// $arrayKeyExistArr = [
+//   'firstName' => 'Tanvir',
+//   'lastName' => 'Ahmed',
+//   'age' => 25,
+// ];
+// $check = array_key_exists('age',$arrayKeyExistArr);
+// echo $check;
+
+//20. array_search()
+$arraySearchArr = [
   'firstName' => 'Tanvir',
   'lastName' => 'Ahmed',
-  'age' => 25,
+  'Address' => 'Dhaka',
 ];
-$check = array_key_exists('age',$arrayKeyExistArr);
+$check = array_search('Tanvir',$arraySearchArr);
 echo $check;
 
 
