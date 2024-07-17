@@ -99,7 +99,14 @@
 // array_unshift($unshiftArr,'Humaira','Khadija');
 // print_r($unshiftArr);
 
+//11. array_slice()
+$sliceArr = ['a','b','c','d','e'];
+$newSliceArr = array_slice($sliceArr,1,3);
+print_r($newSliceArr);
 
-
+//12. array_splice()
+$spliceArr = ['a','b','c','d','e'];
+array_splice($spliceArr,1,2,['tanvir','sadia','maymuna']);
+print_r($spliceArr);
 
 ?>
