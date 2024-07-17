@@ -128,13 +128,24 @@
 // echo $newArr;
 
 //17. in_array()
-$inArr = ['tanvir','sadia','maymuna','humaira'];
-$check = in_array('sadia',$inArr);
-echo $check;
+// $inArr = ['tanvir','sadia','maymuna','humaira'];
+// $check = in_array('sadia',$inArr);
+// echo $check;
 
 //18. is_array()
-$isArr = 'hello world';
-$check = is_array($isArr);
-echo $check; // Ans : false
+// $isArr = 'hello world';
+// $check = is_array($isArr);
+// echo $check; // Ans : false
+
+//19. array_key_exists()
+$arrayKeyExistArr = [
+  'firstName' => 'Tanvir',
+  'lastName' => 'Ahmed',
+  'age' => 25,
+];
+$check = array_key_exists('age',$arrayKeyExistArr);
+echo $check;
+
+
 
 ?>
