@@ -117,4 +117,16 @@
 // $sizeofArr = [1,2,3,4,5];
 // echo sizeof($sizeofArr);
 
+//15. array_sum()
+$sumArr = [1,2,3,4,5];
+$newArr = array_sum($sumArr);
+echo $newArr;
+
+//16. array_product()
+$productArr = [1,2,3,4,5];
+$newArr = array_product($productArr);
+echo $newArr;
+
+
+
 ?>
