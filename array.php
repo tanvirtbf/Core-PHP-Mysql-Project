@@ -160,8 +160,10 @@ $columnArr = [
   ['firstName'=>'Tanvir','lastName'=>'Ahmed','age'=>25],
   ['firstName'=>'Sadia','lastName'=>'Khatun','age'=>15],
   ['firstName'=>'Maymuna','lastName'=>'Hatun','age'=>16]
-]
+];
 
+$testColumn = array_column($columnArr,'age');
+print_r($testColumn);
 
 
 
