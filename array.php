@@ -147,13 +147,16 @@
 // echo $check;
 
 //20. array_search()
-$arraySearchArr = [
-  'firstName' => 'Tanvir',
-  'lastName' => 'Ahmed',
-  'Address' => 'Dhaka',
-];
-$check = array_search('Tanvir',$arraySearchArr);
-echo $check;
+// $arraySearchArr = [
+//   'firstName' => 'Tanvir',
+//   'lastName' => 'Ahmed',
+//   'Address' => 'Dhaka',
+// ];
+// $check = array_search('Tanvir',$arraySearchArr);
+// echo $check;
+
+
+
 
 
 
