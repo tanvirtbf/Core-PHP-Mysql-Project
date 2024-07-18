@@ -155,6 +155,13 @@
 // $check = array_search('Tanvir',$arraySearchArr);
 // echo $check;
 
+//21. array_column()
+$columnArr = [
+  ['firstName'=>'Tanvir','lastName'=>'Ahmed','age'=>25],
+  ['firstName'=>'Sadia','lastName'=>'Khatun','age'=>15],
+  ['firstName'=>'Maymuna','lastName'=>'Hatun','age'=>16]
+]
+
 
 
 
