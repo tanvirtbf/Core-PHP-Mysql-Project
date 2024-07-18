@@ -166,7 +166,9 @@
 // print_r($testColumn);
 
 //22. array_flip()
-
+$flipArr = ['firstName'=>'Tanvir','lastName'=>'Ahmed','age'=>25];
+$flips = array_flip($flipArr);
+print_r($flips);
 
 
 
