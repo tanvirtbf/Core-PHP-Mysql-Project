@@ -1,13 +1,13 @@
 <?php 
 
-$str = 'hello world';
-echo $str[1]; 
+// $str = 'hello world';
+// echo $str[1]; 
 
-echo strtoupper($str); // HELLO WORLD
-echo strtolower($str); // hello world
+// echo strtoupper($str); // HELLO WORLD
+// echo strtolower($str); // hello world
 
-echo ucwords($str); // Hello World // Title case or Capitalized
-echo ucfirst($str); // Hello world // sentence er first word er first character uppercase hobe
+// echo ucwords($str); // Hello World // Title case or Capitalized
+// echo ucfirst($str); // Hello world // sentence er first word er first character uppercase hobe
 
 // various string case
 // 1. Title Case  = Hello World Tanvir
@@ -15,5 +15,10 @@ echo ucfirst($str); // Hello world // sentence er first word er first character 
 // 3. kebab case = hello-world-tanvir
 // 4. camel case = helloWorldTanvir
 // 5. pascel case = HelloWorldTanvir
+
+// string length (strlen)
+// $str = "hello world tanvir";
+// echo strlen($str); // 18
+
  
 ?>
