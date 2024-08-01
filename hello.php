@@ -121,6 +121,21 @@
   //     echo "My name is {$this->name}";
   //   }
   // }
+  Class Human{
+    public $name = "Tanvir Ahmed";
+    function sayHi(){
+      echo "Hello World";
+    }
+    function getName(){
+      echo "My name is {$this->name}";
+    }
+  }
+  $h1 = new Human();
+  echo $h1->name;
+  echo $h1->sayHi();
+  echo $h1->getName();
+
+
   // class Cat{
   //   function sayHi(){
   //     echo "Meow\n";
